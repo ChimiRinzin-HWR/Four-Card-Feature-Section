@@ -1,0 +1,145 @@
+@import url(./reset.css);
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+
+    --VeryDark-Blue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --GrayishBlue1: hsl(240, 3%, 83%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+
+}
+html, body{
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--VeryLightGray);
+    p{
+        font-size: 0.75rem;
+        color: var(--GrayishBlue);
+    }
+}
+header{
+    width: 30rem;
+    text-align: center;
+    margin: 2rem 0 3rem;
+    p{
+        font-size: 0.9rem;
+    }
+    h1{
+        font-weight: 600;
+    }
+}
+.hpara{
+    font-size:1.95rem;
+    color: var(--VeryDark-Blue);
+    font-weight: 300;
+}
+main{
+    width: 100%;
+    max-width: 80rem;
+    max-height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.block{
+    width: 100%;
+    max-width: 18rem;
+    min-width: 15rem;
+    min-height: 12rem;
+    background-color: white;
+    border-radius: 10px 10px 10px;
+    box-shadow: 0 4px 20px var(--GrayishBlue1);
+    padding: 1rem 2rem;
+    overflow: hidden;
+    h2{
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0 0 0.5rem;
+    }
+}
+.team{
+    div{
+        margin: 2rem 0;
+    }
+}
+.supervisor{
+    border-top: 4px solid var(--Cyan);
+}
+.builder{
+    border-top: 4px solid var(--Red);
+}
+.karma{
+    border-top: 4px solid var(--Orange);
+
+}
+.calculator{
+    border-top: 4px solid var(--Blue);
+}
+.icono{
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: right;
+    img{
+        width: 3rem;
+    }
+}
+@media screen and (max-width: 575px){
+    header{
+        padding: 0 2rem;
+        p{
+            font-size: 1.208rem;
+        }
+        h1{
+            font-size: 2.14rem;
+        }
+    }
+    .hpara{
+        font-size: 2.1rem;
+    }
+    main{
+        width: 100%;
+        max-width: 20rem;
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+    .block{
+        width: 100%;
+        max-width: 25rem;
+        min-width: 15rem;
+        min-height: 18rem;
+        background-color: white;
+        border-radius: 10px 10px 10px;
+        box-shadow: 0 4px 20px var(--GrayishBlue1);
+        padding: 1rem 2rem;
+        overflow: hidden;
+        h2{
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .icono{
+        top:5rem;
+        img{
+            width: 4rem;
+        }
+    }
+    .team{
+        .icono{
+            top: 3rem;
+        }
+    }
+}
